@@ -1,0 +1,79 @@
+@font-face{
+	src: url(../fonts/Montserrat.ttf);
+    font-family: Montserrat;
+    font-weight: normal;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: /*#003434*/#62b38D;;
+	font-family: Montserrat, Arial, sans-serif;
+}
+.container{
+	background: #fff;
+	width: 30%;
+	margin: 10% auto;
+	padding: 20px;
+	border-radius: 5px;
+}
+.container h1{
+	text-align: center;
+	font-family: Montserrat, Arial, sans-serif;
+	margin: 20px 0;
+	color: #62b38D;;
+}
+.container form{
+	width: 100%;
+}
+.container form .input-group{
+	display: block;
+	width: 94%;
+	padding-right: 0;
+	padding: 12px 10px;
+	font-family: Montserrat, Arial, sans-serif;
+	font-size: 14px;
+	margin-bottom: 15px;
+	border: 1px solid #62b38D;; 
+	border-radius: 3px;
+}
+.container form .cumbo{
+	width: 100%;
+}
+.container form .btn{
+	width: 100%;
+	background: #6CC49B;
+	color: #fff;
+	font-family: Montserrat, Arial, sans-serif;
+	font-size: 18px;
+	padding: 12px;
+	margin-bottom: 15px;
+	border: 1px solid #6CC49B;; 
+	border-radius: 3px;
+}
+.container form .btn:hover{
+	background: #62b38D;
+}
+.container p{
+	margin: 5px 0;
+	text-align: center;
+}
+.container a{
+	text-decoration: none;
+	color: #62b38D;;
+}
+.container a:hover{
+	text-decoration: underline;
+	color: #62b38D;
+}
+
+@media (max-width: 1250px){
+	.container form .input-group{
+		width: 95%;
+		padding-right: 0;
+	}
+	.container form .cumbo{
+		width: 100%;
+	}
+}

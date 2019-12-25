@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>aaBlog || Welcome Page</title>
         <link rel="stylesheet" type="text/css" href="css/menu.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
@@ -52,8 +52,7 @@
         		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        		cillum dolore...<a href="#">Read More</a></p>
+        		consequat...<a href="#">Read More</a></p>
                 <!-- <img src="images/pc.jpg" width="" > -->
                 <div class="sub">
                     <h1>aaBlog Lorem ipsum</h1>
@@ -70,20 +69,37 @@
                     <p>Lorem Post Sutitle</p>
                     <footer>Posted by <a href="#">Lorem</a> on 02-10-2019</footer>
                 </div>
+                <div class="post">
+                    <a href="#"><h4>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4></a>
+                    <p>Lorem Post Sutitle</p>
+                    <footer>Posted by <a href="#">Lorem</a> on 02-10-2019</footer>
+                </div>
                 <div class="media">
-                    <h3>Subscribe our channels on:</h3>
+                    <h3>Subscribe to our channels on:</h3>
                     <ul>
-                        <li><img src="images/facebook"></li>
-                        <li><img src="images/twitter"></li>
-                        <li><img src="images/instagram"></li>
-                        <li><img src="images/youtube"></li>
-                        <li><img src="images/google+"></li>
+                        <li><a href="http://facebook.com/aliyufari"><img src="icons/facebook.png"></a></li>
+                        <li><a href=""><img src="icons/twitter.png"></a></li>
+                        <li><a href=""><img src="icons/youtube.png"></a></li>
+                        <li><a href=""><img src="icons/googleplus.png"></a></li>
+                        <li><a href=""><img src="icons/instagram.jpg" width="70" height="70"></a></li>
                     </ul>
                 </div>
         	</div>
         </div>
         <footer class="footer">
-            <p>Copyright &copy; <a href="#">aaBlog</a> 2019 Alright Reserved</p>
+            <div class="box">
+                
+            </div>
+            <div class="box">
+                 <p>Copyright &copy; <a href="#">aaBlog</a> 2019 Alright Reserved</p>
+                 <a href=""><i class="fas facebook"></i></a>
+                 <a href=""><i class="fas twitter"></i></a>
+                 <a href=""><i class="fas youtube"></i></a>
+                 <a href=""><i class="fas instagram"></i></a>
+            </div>
+            <div class="box">
+                
+            </div>
         </footer>
     <script src="js/jquery.js"></script>
     <script>

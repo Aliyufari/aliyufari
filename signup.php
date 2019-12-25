@@ -3,25 +3,65 @@
 <head>
 	<title>aaBlog || Registration Page</title>
 	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Sign Up Here!</h1>
-		<form action="" method="POST">
-			<input type="text" name="name" class="input-group" placeholder="Full Name">
-			<input type="email" name="email" class="input-group" placeholder="Email">
-			<input type="text" name="username" class="input-group" placeholder="Username">
-			<select name="country" class="input-group cumbo">
-				<option>Select Country</option>
-				<option>Nigeria</option>
-				<option>Niger</option>
-				<option>Ghana</option>
-				<option>Sudan</option>
-			</select>
-			<input type="password" name="password" class="input-group" placeholder="Password">
-			<button name="login" class="btn">Submit</button>
-		</form>
-		<p>Already have an account?<a href="login.php"> Sign In</a></p>
+	<div class="wrapper">
+		<div class="container">
+			<span class="form-heading">Sign Up</span>
+			<form action="includes/process.php" method="POST" class="form-box">
+				<div class="input-group">
+					<i class="fas fa-user"></i>
+					<input type="text" name="user-name" autocomplete="off" placeholder="Username">
+					<span class="bar"></span>
+				</div>
+				<div class="input-group">
+					<i class="fas fa-envelope"></i>
+					<input type="email" name="user-email" autocomplete="off" placeholder="Email">
+					<span class="bar"></span>
+				</div>
+				<div class="input-group">
+					<i class="fas fa-globe"></i>
+					<select name="country">
+						<option disabled="disabled">Select Country</option>
+						<option>Nigeria</option>
+						<option>Niger</option>
+						<option>India</option>
+						<option>China</option>
+						<option>USA</option>
+					</select>
+					<span class="bar"></span>
+				</div>
+				<div class="input-group">
+					<i class="fas fa-users"></i>
+					<select name="gender">
+						<option disabled="disabled">Select Gender</option>
+						<option>Male</option>
+						<option>Female</option>
+						<option>Other</option>
+					</select>
+					<span class="bar"></span>
+				</div>
+				<div class="input-group">
+					<i class="fas fa-lock"></i>
+					<input type="password" name="user-password" autocomplete="off" placeholder="Password">
+					<span class="bar"></span>
+				</div>
+				<div class="input-group">
+					<i class="fas fa-lock"></i>
+					<input type="password" name="user-password2" autocomplete="off" placeholder="Comfirm Password">
+					<span class="bar"></span>
+				</div>
+				<div class="input-group">
+					<button name="signup" class="btn">
+						<i class="fab fa-telegram-plane"></i>
+					</button>
+				</div>
+				<div class="switch-user">
+					<p>Already have an account?<a href="login.php"> Sign In</a></p>
+				</div>
+			</form>
+		</div>
 	</div>
 </body>
 </html>

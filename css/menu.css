@@ -55,12 +55,13 @@ nav a{
 
 nav .navbar{
 	max-width: 1000px;
-	width: 95%;
+	width: 78%;
 	margin: 0 auto;
 }
 nav .logo{
 	display: inline-block;
-	font-size: 30px;
+	font-size: 24px;
+	font-family: Pacifico;
 	font-weight: bold;
 	float: left;
 	line-height: 42px;
@@ -162,6 +163,7 @@ nav .log-link:hover{
 	}
 }
 @media (max-width: 800px){
+	nav .navbar{width: 90%;}
 	nav .logo{line-height: 58px;}
 	nav .menu{display: none; clear: both;}
 	nav .menu-toggle{display: inline-block;}

@@ -1,11 +1,11 @@
 @font-face{
-	src: url(../fonts/Montserrat.ttf);
-    font-family: Montserrat;
+	src: url(../Kanit-Regular.ttf);
+    font-family: Sacramento-Regular;
     font-weight: normal;
 }
 @font-face{
-	src: url(../fonts/typo.ttf);
-    font-family: Typo;
+	src: url(../fonts/poppins/Poppins-Regular.ttf);
+    font-family: Poppins-Regular;
 }
 *{
 	margin: 0;
@@ -18,13 +18,13 @@ body{
 	background: #ced4da;
     background: -moz-radial-gradient(center, ellipse cover, #f8f9fa 1%, #ced4da 100%);
     background: -webkit-radial-gradient(center, ellipse cover, #f8f9fa 1%, #ced4da 100%);
-	font-family: Montserrat, Arial, sans-serif;
+	font-family: Sacramento-Regular, Arial, sans-serif;
 	font-size: 14px;
 }
 
 .content-header{
 	overflow: hidden;
-	width: 88%;
+	width: 80%;
 	margin: 35px auto 0px auto;
 	background: #62b38D;
 	border-bottom: 2px solid #FFBB22;
@@ -37,8 +37,8 @@ body{
 	line-height: 55px;
 }
 .content-header form{
-	width: 35%;
 	float: right;
+	margin-right: 2%;
 	line-height: 55px;
 	overflow: hidden;
 }
@@ -47,12 +47,14 @@ body{
 	padding: 8px 15px;
 	border: 1px solid #FFBB22;
 	border-radius: 20px 0 0 20px;
+	-o-border-radius: 20px 0 0 20px;
 }
 .content-header form button{
 	background: #FFBB22;
 	padding: 8px 12px;
 	border: 1px solid #FFBB22;
 	border-radius: 0 20px 20px 0;
+	-o-border-radius: 0 20px 20px 0;
 	margin-left: -20px;
 	color: #fff;
 }
@@ -66,7 +68,7 @@ body{
 }
 
 .content{
-	width: 88%;
+	width: 80%;
 	margin: 15px auto;
 	margin-top: -0px;
 	border-radius: 0 0 8px 8px;
@@ -89,6 +91,7 @@ body{
 	padding: 4px;
 	margin: 5px 10px 10px 5px;
 	border-radius: 3px;
+	-o-border-radius: 3px;
 	float: left;
 }
 .content-left .top h3{
@@ -117,6 +120,7 @@ body{
 	padding: 20px 30px;
 	margin: 5px 5px 10px 5px;
 	border-radius: 10px;
+	-o-border-radius: 10px;
 }
 .content-left .jumbotron:hover{
 	background: #62b38D;
@@ -181,6 +185,7 @@ body{
 	margin: 20px 0;
 	padding: 5%;
 	border-radius: 10px;
+	-o-border-radius: 10px;
 }
 .main-content .post a{
 	color: #003434;
@@ -205,7 +210,11 @@ body{
 .main-content .media{
 	width: 100%;
 	overflow: hidden;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
+}
+.main-content .media h3{
+	color: #6CC49B;
+	margin-bottom: 5px;
 }
 .main-content .media ul{
 	float: left;
@@ -215,6 +224,10 @@ body{
 	list-style: none;
 	float: left;
 	margin: 5px 10px;
+}
+.main-content .media ul li img{
+	width: 50px;
+	height: 50px; 
 }
 .footer{
 	background: #62b38D;

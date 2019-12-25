@@ -9,7 +9,16 @@
 		<div class="menu">
 			<ul>
 				<li><a href=""><i class="fas fa-user"></i>About</a></li>
-				<li><a href=""><i class="fas fa-users"></i>Developers</a></li>
+				<li>
+					<span class="dropdown"><i class="fas fa-users"></i>Developers <span class="arrow down"></span></span>
+					<ul>
+						<li><a href="">Lorem Development</a></li>
+						<li><a href="">Flutter</a></li>
+						<li><a href="">Android Development</a></li>
+						<li><a href="">Java</a></li>
+						<li><a href="">Python</a></li>
+					</ul>
+				</li>
 				<li>
 					<span class="dropdown"><i class="fas fa-edit"></i>Tutorials <span class="arrow down"></span></span>
 					<ul>

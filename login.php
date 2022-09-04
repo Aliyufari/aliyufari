@@ -1,3 +1,4 @@
+<?php require 'bootstrap.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,15 +10,22 @@
 	<div class="wrapper">
 		<div class="container">
 			<span class="form-heading">Sign In</span>
-			<form action="classes/User.class.php" method="POST" class="form-box">
+			<form action="" method="POST" class="form-box">
+				<?php if(!empty($messages)): ?>
+					<div class="input-group <?php isset($messages['success']) ? print('success') : print('error'); ?>">
+						<?php foreach($messages as $error): ?>
+							<p class=""><?php !empty($error) ? print($error) : ''; ?></p>
+						<?php endforeach; ?>
+					</div>
+				<?php endif; ?>
 				<div class="input-group">
 					<i class="fas fa-user"></i>
-					<input type="text" name="user-name" autocomplete="off" placeholder="Email">
+					<input type="text" name="username" autocomplete="off" placeholder="Email">
 					<span class="bar"></span>
 				</div>
 				<div class="input-group">
 					<i class="fas fa-lock"></i>
-					<input type="password" name="user-password" autocomplete="off" placeholder="Password">
+					<input type="password" name="password" autocomplete="off" placeholder="Password">
 					<span class="bar"></span>
 				</div>
 				<div class="forgot-password">

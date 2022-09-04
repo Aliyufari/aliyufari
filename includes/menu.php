@@ -30,7 +30,12 @@
 				</li>
 				<li><a href=""><i class="fas fa-phone"></i>Contact</a></li>
 			</ul>
-			<a href="login.php" class="log-link"><i class="fas fa-sign-in-alt"></i>Login</a>
+			<?php if (isset($_SESSION['username']) && isset($_SESSION['email'])): ?>
+			<?php session_start(); die(var_dump($_SESSION['username'])); ?>
+				<a href="login.php" class="log-link"><i class="fas fa-sign-out-alt"></i>Logout</a>
+			<?php else: ?>
+				<a href="login.php" class="log-link"><i class="fas fa-sign-in-alt"></i>Login</a>
+			<?php endif ?>
 		</div>
 	</div>
 </nav>

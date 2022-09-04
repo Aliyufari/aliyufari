@@ -97,6 +97,15 @@ form{
 	display: flex;
 	align-items: center;
 }
+.error,
+.success{
+	width: 80%;	display: block;	padding: 10px;
+}
+.error{background: #ffccba; border: 1px solid #d63301;}
+.success{background: #dff2bf; border: 1px solid #4f8a10;}
+.error p{color: #d63301; font-size: 1.6rem; margin: 5px 0;}
+.success p{color: #4f8a10; font-size: 1.6rem; margin: 5px 0;}
+
 .input-group input, .input-group select{
 	width: 100%;
 	position: relative;

@@ -1,3 +1,4 @@
+<?php require 'bootstrap.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,15 +10,22 @@
 	<div class="wrapper">
 		<div class="container">
 			<span class="form-heading">Sign Up</span>
-			<form action="includes/process.php" method="POST" class="form-box">
+			<form action="" method="POST" class="form-box">
+				<?php if(!empty($messages)): ?>
+					<div class="input-group error">
+						<?php foreach($messages as $error): ?>
+							<p class=""><?php !empty($error) ? print($error) : ''; ?></p>
+						<?php endforeach; ?>
+					</div>
+				<?php endif; ?>
 				<div class="input-group">
 					<i class="fas fa-user"></i>
-					<input type="text" name="user-name" autocomplete="off" placeholder="Username">
+					<input type="text" name="username" placeholder="Username">
 					<span class="bar"></span>
 				</div>
 				<div class="input-group">
 					<i class="fas fa-envelope"></i>
-					<input type="email" name="user-email" autocomplete="off" placeholder="Email">
+					<input type="email" name="email" placeholder="Email">
 					<span class="bar"></span>
 				</div>
 				<div class="input-group">
@@ -44,12 +52,12 @@
 				</div>
 				<div class="input-group">
 					<i class="fas fa-lock"></i>
-					<input type="password" name="user-password" autocomplete="off" placeholder="Password">
+					<input type="password" name="password" placeholder="Password">
 					<span class="bar"></span>
 				</div>
 				<div class="input-group">
 					<i class="fas fa-lock"></i>
-					<input type="password" name="user-password2" autocomplete="off" placeholder="Comfirm Password">
+					<input type="password" name="comfirmPassword" placeholder="Comfirm Password">
 					<span class="bar"></span>
 				</div>
 				<div class="input-group">
